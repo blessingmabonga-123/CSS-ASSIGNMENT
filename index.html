@@ -3,32 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Concert Tickets – Showcase</title>
+  <title>Fashion & Beauty – Showcase</title>
 
-  <!-- Internal CSS -->
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fafafa;
+      font-family: 'Trebuchet MS', sans-serif;
+      background: linear-gradient(135deg, #ffeef8, #eaf6f6);
       margin: 40px;
-      color: #333;
+      color: #2b2b2b;
     }
 
     h1 {
       text-align: center;
-      color: #2b2b52;
-      font-size: 2.2em;
+      color: #b30059;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
     }
 
     table {
-      width: 90%;
-      margin: 20px auto;
+      width: 95%;
+      margin: 25px auto;
       border-collapse: collapse;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
     }
 
     th, td {
-      border: 1px solid #444;
+      border: 1px solid #ddd;
       padding: 12px;
       text-align: center;
       font-size: 1em;
@@ -41,112 +45,109 @@
       letter-spacing: 1px;
     }
 
-    /* Header color classes */
-    .col1 { background-color: #2ecc71; }
-    .col2 { background-color: #3498db; }
-    .col3 { background-color: #9b59b6; }
-    .col4 { background-color: #f39c12; }
-    .col5 { background-color: #e74c3c; }
-    .col6 { background-color: #1abc9c; }
-
     caption {
       text-align: left;
       font-weight: bold;
       font-size: 1.2em;
       margin: 10px 0;
-      color: #2b2b52;
+      color: #444;
+    }
+
+    tr:hover td {
+      opacity: 0.9;
+      cursor: pointer;
     }
 
     footer {
       text-align: center;
-      margin-top: 30px;
-      padding: 10px;
-      color: #555;
+      margin-top: 40px;
+      padding: 15px;
+      color: #777;
       font-style: italic;
-      border-top: 2px solid #ccc;
+      border-top: 2px dashed #b30059;
     }
   </style>
 </head>
 <body>
 
-  <h1>🎶 Concert Tickets Showcase</h1>
+  <h1>👗 Fashion & Beauty Showcase</h1>
 
   <!-- First Table -->
   <table>
-    <caption>Available Concerts</caption>
+    <caption>Trending Fashion Collections</caption>
     <tr>
-      <th class="col1">Artist</th>
-      <th class="col2">Date</th>
-      <th class="col3">Venue</th>
-      <th class="col4">Seat</th>
-      <th class="col5">Price</th>
-      <th class="col6">Status</th>
+      <th style="background-color:#d63384;">Designer</th>
+      <th style="background-color:#ff7f50;">Collection</th>
+      <th style="background-color:#6f42c1;">Theme</th>
+      <th style="background-color:#20c997;">Runway Date</th>
+      <th style="background-color:#fd7e14;">Price Range</th>
+      <th style="background-color:#0d6efd;">Status</th>
     </tr>
     <tr>
-      <td>Alicia Keys</td>
-      <td>12 Nov 2025</td>
-      <td>National Stadium</td>
-      <td>A05</td>
-      <td>KES 4,000</td>
-      <td>Available</td>
+      <td style="background-color:#ffe4ec;">Versace</td>
+      <td style="background-color:#f0e68c;">Summer Glow</td>
+      <td style="background-color:#d8bfd8;">Tropical Elegance</td>
+      <td style="background-color:#afeeee;">Nov 2025</td>
+      <td style="background-color:#ffb6c1;">KES 20,000+</td>
+      <td style="background-color:#98fb98;">Available</td>
     </tr>
     <tr>
-      <td>Burna Boy</td>
-      <td>05 Dec 2025</td>
-      <td>Moi International</td>
-      <td>B10</td>
-      <td>KES 6,500</td>
-      <td>Sold Out</td>
+      <td style="background-color:#ffd700;">Dior</td>
+      <td style="background-color:#ffdab9;">Winter Luxe</td>
+      <td style="background-color:#dda0dd;">Minimalist Chic</td>
+      <td style="background-color:#e0ffff;">Dec 2025</td>
+      <td style="background-color:#add8e6;">KES 35,000+</td>
+      <td style="background-color:#f08080;">Sold Out</td>
     </tr>
     <tr>
-      <td>Tems</td>
-      <td>20 Jan 2026</td>
-      <td>Kasarani Arena</td>
-      <td>C03</td>
-      <td>KES 5,500</td>
-      <td>Limited</td>
+      <td style="background-color:#e6e6fa;">Fenty</td>
+      <td style="background-color:#ffe4b5;">Glow & Bold</td>
+      <td style="background-color:#fafad2;">Street Glam</td>
+      <td style="background-color:#f5deb3;">Jan 2026</td>
+      <td style="background-color:#d8bfd8;">KES 15,000+</td>
+      <td style="background-color:#90ee90;">Limited</td>
     </tr>
   </table>
 
   <!-- Second Table -->
   <table>
-    <caption>Event Organizers</caption>
+    <caption>Beauty & Design Brands</caption>
     <tr>
-      <th class="col1">Company</th>
-      <th class="col2">Contact</th>
-      <th class="col3">Email</th>
-      <th class="col4">City</th>
-      <th class="col5">Partnership</th>
-      <th class="col6">Next Event</th>
+      <th style="background-color:#d63384;">Brand</th>
+      <th style="background-color:#ff7f50;">Contact</th>
+      <th style="background-color:#6f42c1;">Email</th>
+      <th style="background-color:#20c997;">City</th>
+      <th style="background-color:#fd7e14;">Specialty</th>
+      <th style="background-color:#0d6efd;">Next Launch</th>
     </tr>
     <tr>
-      <td>Daystar Events</td>
-      <td>+254 712 334455</td>
-      <td>info@daystarevents.com</td>
-      <td>Nairobi</td>
-      <td>Major Partner</td>
-      <td>Dec 2025</td>
+      <td style="background-color:#ffe4e1;">MAC Cosmetics</td>
+      <td style="background-color:#f0e68c;">+254 711 223344</td>
+      <td style="background-color:#e0ffff;">info@mac.com</td>
+      <td style="background-color:#fafad2;">Nairobi</td>
+      <td style="background-color:#f5deb3;">Luxury Makeup</td>
+      <td style="background-color:#98fb98;">Dec 2025</td>
     </tr>
     <tr>
-      <td>SoundWave Promotions</td>
-      <td>+254 700 998877</td>
-      <td>support@soundwave.co.ke</td>
-      <td>Mombasa</td>
-      <td>Official Sponsor</td>
-      <td>Jan 2026</td>
+      <td style="background-color:#ffdab9;">Huda Beauty</td>
+      <td style="background-color:#dda0dd;">+254 722 334455</td>
+      <td style="background-color:#afeeee;">support@hudabeauty.com</td>
+      <td style="background-color:#ffe4b5;">Mombasa</td>
+      <td style="background-color:#e6e6fa;">Skincare & Beauty</td>
+      <td style="background-color:#f08080;">Jan 2026</td>
     </tr>
     <tr>
-      <td>Kenya Music Arena</td>
-      <td>+254 701 445566</td>
-      <td>contact@kma.co.ke</td>
-      <td>Nakuru</td>
-      <td>Media Partner</td>
-      <td>Feb 2026</td>
+      <td style="background-color:#fafad2;">Gucci Design</td>
+      <td style="background-color:#add8e6;">+254 733 445566</td>
+      <td style="background-color:#fff8dc;">design@gucci.com</td>
+      <td style="background-color:#ffe4e1;">Kisumu</td>
+      <td style="background-color:#d8bfd8;">Fashion Accessories</td>
+      <td style="background-color:#90ee90;">Feb 2026</td>
     </tr>
   </table>
 
   <footer>
-    <p>&copy; 2025 Concert Tickets | Designed by Maisey</p>
+    <p>&copy; 2025 Fashion & Beauty World | Designed with 💖 by Maisey</p>
   </footer>
 
 </body>
