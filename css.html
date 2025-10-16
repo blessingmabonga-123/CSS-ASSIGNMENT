@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Colorful Tables</title>
@@ -16,75 +16,33 @@
       text-align: center;
     }
 
-    /* Table 1 Header Cells */
-    table:nth-of-type(1) tr:nth-child(1) th:nth-child(1) { background-color: #ffcccc; }
-    table:nth-of-type(1) tr:nth-child(1) th:nth-child(2) { background-color: #ccffff; }
-    table:nth-of-type(1) tr:nth-child(1) th:nth-child(3) { background-color: #ccffcc; }
-    table:nth-of-type(1) tr:nth-child(1) th:nth-child(4) { background-color: #ffffcc; }
-    table:nth-of-type(1) tr:nth-child(1) th:nth-child(5) { background-color: #e6ccff; }
+    /* General color themes for headers */
+    .table1 th:nth-child(1) { background-color: #ffcccc; }
+    .table1 th:nth-child(2) { background-color: #ccffff; }
+    .table1 th:nth-child(3) { background-color: #ccffcc; }
+    .table1 th:nth-child(4) { background-color: #ffffcc; }
+    .table1 th:nth-child(5) { background-color: #e6ccff; }
 
-    /* Table 1 Data Cells */
-    table:nth-of-type(1) tr:nth-child(2) td:nth-child(1) { background-color: #ffe6e6; }
-    table:nth-of-type(1) tr:nth-child(2) td:nth-child(2) { background-color: #e0ffff; }
-    table:nth-of-type(1) tr:nth-child(2) td:nth-child(3) { background-color: #e0ffe0; }
-    table:nth-of-type(1) tr:nth-child(2) td:nth-child(4) { background-color: #ffffe0; }
-    table:nth-of-type(1) tr:nth-child(2) td:nth-child(5) { background-color: #f0e6ff; }
+    .table2 th:nth-child(1) { background-color: #ffb3b3; }
+    .table2 th:nth-child(2) { background-color: #b3ffff; }
+    .table2 th:nth-child(3) { background-color: #b3ffb3; }
+    .table2 th:nth-child(4) { background-color: #ffffb3; }
+    .table2 th:nth-child(5) { background-color: #d1b3ff; }
 
-    table:nth-of-type(1) tr:nth-child(3) td:nth-child(1) { background-color: #ffdddd; }
-    table:nth-of-type(1) tr:nth-child(3) td:nth-child(2) { background-color: #ddffff; }
-    table:nth-of-type(1) tr:nth-child(3) td:nth-child(3) { background-color: #ddffdd; }
-    table:nth-of-type(1) tr:nth-child(3) td:nth-child(4) { background-color: #ffffdd; }
-    table:nth-of-type(1) tr:nth-child(3) td:nth-child(5) { background-color: #e6ddff; }
+    /* Alternate row colors */
+    .table1 tr:nth-child(even) td {
+      background-color: #f9f9f9;
+    }
 
-    table:nth-of-type(1) tr:nth-child(4) td:nth-child(1) { background-color: #ffd9d9; }
-    table:nth-of-type(1) tr:nth-child(4) td:nth-child(2) { background-color: #d9ffff; }
-    table:nth-of-type(1) tr:nth-child(4) td:nth-child(3) { background-color: #d9ffd9; }
-    table:nth-of-type(1) tr:nth-child(4) td:nth-child(4) { background-color: #ffffd9; }
-    table:nth-of-type(1) tr:nth-child(4) td:nth-child(5) { background-color: #e6d9ff; }
-
-    table:nth-of-type(1) tr:nth-child(5) td:nth-child(1) { background-color: #ffd6d6; }
-    table:nth-of-type(1) tr:nth-child(5) td:nth-child(2) { background-color: #d6ffff; }
-    table:nth-of-type(1) tr:nth-child(5) td:nth-child(3) { background-color: #d6ffd6; }
-    table:nth-of-type(1) tr:nth-child(5) td:nth-child(4) { background-color: #ffffd6; }
-    table:nth-of-type(1) tr:nth-child(5) td:nth-child(5) { background-color: #e6d6ff; }
-
-    /* Table 2 Header Cells */
-    table:nth-of-type(2) tr:nth-child(1) th:nth-child(1) { background-color: #ffb3b3; }
-    table:nth-of-type(2) tr:nth-child(1) th:nth-child(2) { background-color: #b3ffff; }
-    table:nth-of-type(2) tr:nth-child(1) th:nth-child(3) { background-color: #b3ffb3; }
-    table:nth-of-type(2) tr:nth-child(1) th:nth-child(4) { background-color: #ffffb3; }
-    table:nth-of-type(2) tr:nth-child(1) th:nth-child(5) { background-color: #d1b3ff; }
-
-    /* Table 2 Data Cells */
-    table:nth-of-type(2) tr:nth-child(2) td:nth-child(1) { background-color: #ffcccc; }
-    table:nth-of-type(2) tr:nth-child(2) td:nth-child(2) { background-color: #ccffff; }
-    table:nth-of-type(2) tr:nth-child(2) td:nth-child(3) { background-color: #ccffcc; }
-    table:nth-of-type(2) tr:nth-child(2) td:nth-child(4) { background-color: #ffffcc; }
-    table:nth-of-type(2) tr:nth-child(2) td:nth-child(5) { background-color: #e6ccff; }
-
-    table:nth-of-type(2) tr:nth-child(3) td:nth-child(1) { background-color: #ffe6e6; }
-    table:nth-of-type(2) tr:nth-child(3) td:nth-child(2) { background-color: #e0ffff; }
-    table:nth-of-type(2) tr:nth-child(3) td:nth-child(3) { background-color: #e0ffe0; }
-    table:nth-of-type(2) tr:nth-child(3) td:nth-child(4) { background-color: #ffffe0; }
-    table:nth-of-type(2) tr:nth-child(3) td:nth-child(5) { background-color: #f0e6ff; }
-
-    table:nth-of-type(2) tr:nth-child(4) td:nth-child(1) { background-color: #ffdddd; }
-    table:nth-of-type(2) tr:nth-child(4) td:nth-child(2) { background-color: #ddffff; }
-    table:nth-of-type(2) tr:nth-child(4) td:nth-child(3) { background-color: #ddffdd; }
-    table:nth-of-type(2) tr:nth-child(4) td:nth-child(4) { background-color: #ffffdd; }
-    table:nth-of-type(2) tr:nth-child(4) td:nth-child(5) { background-color: #e6ddff; }
-
-    table:nth-of-type(2) tr:nth-child(5) td:nth-child(1) { background-color: #ffd9d9; }
-    table:nth-of-type(2) tr:nth-child(5) td:nth-child(2) { background-color: #d9ffff; }
-    table:nth-of-type(2) tr:nth-child(5) td:nth-child(3) { background-color: #d9ffd9; }
-    table:nth-of-type(2) tr:nth-child(5) td:nth-child(4) { background-color: #ffffd9; }
-    table:nth-of-type(2) tr:nth-child(5) td:nth-child(5) { background-color: #e6d9ff; }
+    .table2 tr:nth-child(even) td {
+      background-color: #f1f1f1;
+    }
   </style>
 </head>
 <body>
 
   <h2>Table 1: Student Performance</h2>
-  <table>
+  <table class="table1">
     <tr>
       <th>Name</th>
       <th>Course</th>
@@ -122,45 +80,46 @@
     </tr>
   </table>
 
- <h2>Table 2: Tech Startups in Kenya</h2>
-<table>
-  <tr>
-    <th>Startup</th>
-    <th>Location</th>
-    <th>Founder</th>
-    <th>Focus Area</th>
-    <th>Contact</th>
-  </tr>
-  <tr>
-    <td>AgriTech Hub</td>
-    <td>Eldoret</td>
-    <td>Mercy W.</td>
-    <td>Smart Farming</td>
-    <td>0712345678</td>
-  </tr>
-  <tr>
-    <td>FinLink</td>
-    <td>Nairobi</td>
-    <td>John M.</td>
-    <td>Mobile Payments</td>
-    <td>0723456789</td>
-  </tr>
-  <tr>
-    <td>HealthSync</td>
-    <td>Kisumu</td>
-    <td>Grace T.</td>
-    <td>Telemedicine</td>
-    <td>0734567890</td>
-  </tr>
-  <tr>
-    <td>EduNova</td>
-    <td>Mombasa</td>
-    <td>Daniel K.</td>
-    <td>Online Learning</td>
-    <td>0745678901</td>
-  </tr>
-</table>
+  <h2>Table 2: Tech Startups in Kenya</h2>
+  <table class="table2">
+    <tr>
+      <th>Startup</th>
+      <th>Location</th>
+      <th>Founder</th>
+      <th>Focus Area</th>
+      <th>Contact</th>
+    </tr>
+    <tr>
+      <td>AgriTech Hub</td>
+      <td>Eldoret</td>
+      <td>Mercy W.</td>
+      <td>Smart Farming</td>
+      <td>0712345678</td>
+    </tr>
+    <tr>
+      <td>FinLink</td>
+      <td>Nairobi</td>
+      <td>John M.</td>
+      <td>Mobile Payments</td>
+      <td>0723456789</td>
+    </tr>
+    <tr>
+      <td>HealthSync</td>
+      <td>Kisumu</td>
+      <td>Grace T.</td>
+      <td>Telemedicine</td>
+      <td>0734567890</td>
+    </tr>
+    <tr>
+      <td>EduNova</td>
+      <td>Mombasa</td>
+      <td>Daniel K.</td>
+      <td>Online Learning</td>
+      <td>0745678901</td>
+    </tr>
+  </table>
 
 </body>
 </html>
+
         
