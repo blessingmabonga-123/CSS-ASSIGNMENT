@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fashion Beauty and Design – CSS Showcase</title>
+  <style>
+    /* 1. Styling a Page Header */
+    h1 {
+      color: crimson;
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+    }
+
+    /* 2. Creating a Highlight Class */
+    .highlight {
+      font-weight: bold;
+      background-color: gold;
+      font-size: 20px;
+    }
+
+    /* 3. Box Model Practice */
+    .product-box {
+      margin: 20px;
+      padding: 10px;
+      border: 2px solid black;
+      background-color: #fdf5e6;
+    }
+
+    /* 4. Responsive Design */
+    @media screen and (max-width: 600px) {
+      body {
+        background-color: lavenderblush;
+      }
+    }
+
+    /* 5. Background Image */
+    .banner {
+      background-image: url('https://via.placeholder.com/800x200?text=Fashion+Banner');
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 200px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      font-family: 'Georgia', serif;
+    }
+
+    /* 6. Transition Effect */
+    .shop-btn {
+      background-color: navy;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      transition: background-color 0.5s;
+    }
+
+    .shop-btn:hover {
+      background-color: teal;
+    }
+
+    /* 7. Absolute vs Relative Positioning */
+    .relative-box {
+      position: relative;
+      background-color: #f0f0f0;
+      width: 300px;
+      height: 150px;
+      margin-bottom: 40px;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #ffe4e1;
+      width: 100px;
+      height: 100px;
+    }
+
+    /* 8. Using Different CSS Units */
+    .px-size { font-size: 16px; }
+    .em-size { font-size: 1.5em; }
+    .rem-size { font-size: 1.5rem; }
+
+    /* 9. Grid or Flex Layout */
+    .flex-container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .flex-item {
+      flex: 1;
+      background-color: #f0f8ff;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    /* 10. Color Formats */
+    .rgb { color: rgb(255, 0, 0); }
+    .hex { color: #00ff00; }
+    .hsl { color: hsl(240, 100%, 50%); }
+  </style>
+</head>
+<body>
+
+  <h1>Fashion Beauty and Design – CSS Showcase</h1>
+
+  <!-- 2. Highlight Class -->
+  <p class="highlight">This featured product is trending this week!</p>
+
+  <!-- 3. Box Model -->
+  <div class="product-box">New arrival: Silk wrap dress with elegant trim.</div>
+
+  <!-- 4. Responsive Design -->
+  <p>Resize the browser to see the background change for mobile view.</p>
+
+  <!-- 5. Background Image -->
+  <div class="banner">Welcome to Our Style Studio</div>
+
+  <!-- 6. Transition Effect -->
+  <button class="shop-btn">Shop Now</button>
+
+  <!-- 7. Absolute vs Relative Positioning -->
+  <div class="relative-box">
+    Fashion Frame
+    <div class="absolute-box">Promo Tag</div>
+  </div>
+
+  <!-- 8. CSS Units -->
+  <div style="font-size: 20px;">
+    <p class="px-size">Font size in px (16px)</p>
+    <p class="em-size">Font size in em (1.5em)</p>
+    <p class="rem-size">Font size in rem (1.5rem)</p>
+  </div>
+
+  <!-- 9. Flex Layout -->
+  <div class="flex-container">
+    <div class="flex-item">Beauty Tips</div>
+    <div class="flex-item">Design Trends</div>
+  </div>
+
+  <!-- 10. Color Formats -->
+  <p class="rgb">This paragraph uses RGB color.</p>
+  <p class="hex">This paragraph uses HEX color.</p>
+  <p class="hsl">This paragraph uses HSL color.</p>
+
+</body>
+</html>
