@@ -1,149 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Fashion Beauty and Design – CSS Showcase</title>
   <style>
-    /* 1. Styling a Page Header */
-    h1 {
-      color: crimson;
-      text-align: center;
-      font-family: 'Arial', sans-serif;
-    }
-
-    /* 2. Creating a Highlight Class */
-    .highlight {
-      font-weight: bold;
-      background-color: gold;
-      font-size: 20px;
-    }
-
-    /* 3. Box Model Practice */
-    .product-box {
-      margin: 20px;
-      padding: 10px;
-      border: 2px solid black;
-      background-color: #fdf5e6;
-    }
-
-    /* 4. Responsive Design */
-    @media screen and (max-width: 600px) {
-      body {
-        background-color: lavenderblush;
-      }
-    }
-
-    /* 5. Background Image */
-    .banner {
-      background-image: url('https://via.placeholder.com/800x200?text=Fashion+Banner');
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 200px;
-      color: white;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 24px;
-      font-family: 'Georgia', serif;
-    }
-
-    /* 6. Transition Effect */
-    .shop-btn {
-      background-color: navy;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      transition: background-color 0.5s;
-    }
-
-    .shop-btn:hover {
-      background-color: teal;
-    }
-
-    /* 7. Absolute vs Relative Positioning */
-    .relative-box {
-      position: relative;
-      background-color: #f0f0f0;
-      width: 300px;
-      height: 150px;
+    table {
+      width: 100%;
+      border-collapse: collapse;
       margin-bottom: 40px;
     }
 
-    .absolute-box {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      background-color: #ffe4e1;
-      width: 100px;
-      height: 100px;
+    th, td {
+      border: 1px solid #000;
+      padding: 10px;
+      text-align: center;
     }
 
-    /* 8. Using Different CSS Units */
-    .px-size { font-size: 16px; }
-    .em-size { font-size: 1.5em; }
-    .rem-size { font-size: 1.5rem; }
-
-    /* 9. Grid or Flex Layout */
-    .flex-container {
-      display: flex;
-      gap: 20px;
-    }
-
-    .flex-item {
-      flex: 1;
-      background-color: #f0f8ff;
-      padding: 20px;
-      border: 1px solid #ccc;
-    }
-
-    /* 10. Color Formats */
-    .rgb { color: rgb(255, 0, 0); }
-    .hex { color: #00ff00; }
-    .hsl { color: hsl(240, 100%, 50%); }
+    /* Column color styles */
+    td:nth-child(1), th:nth-child(1) { background-color: #ffe5e5; } /* Light pink */
+    td:nth-child(2), th:nth-child(2) { background-color: #e0f7fa; } /* Light cyan */
+    td:nth-child(3), th:nth-child(3) { background-color: #e8f5e9; } /* Light green */
+    td:nth-child(4), th:nth-child(4) { background-color: #fff8e1; } /* Light yellow */
+    td:nth-child(5), th:nth-child(5) { background-color: #f3e5f5; } /* Light purple */
   </style>
 </head>
 <body>
 
-  <h1>Fashion Beauty and Design – CSS Showcase</h1>
+  <h2>Table 1: Student Performance</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Course</th>
+      <th>Score</th>
+      <th>Grade</th>
+      <th>Remarks</th>
+    </tr>
+    <tr>
+      <td>Brian</td>
+      <td>Web Design</td>
+      <td>85</td>
+      <td>A</td>
+      <td>Excellent</td>
+    </tr>
+    <tr>
+      <td>Faith</td>
+      <td>Cybersecurity</td>
+      <td>78</td>
+      <td>B+</td>
+      <td>Very Good</td>
+    </tr>
+    <tr>
+      <td>Kevin</td>
+      <td>Networking</td>
+      <td>65</td>
+      <td>B</td>
+      <td>Good</td>
+    </tr>
+    <tr>
+      <td>Linda</td>
+      <td>Programming</td>
+      <td>92</td>
+      <td>A+</td>
+      <td>Outstanding</td>
+    </tr>
+  </table>
 
-  <!-- 2. Highlight Class -->
-  <p class="highlight">This featured product is trending this week!</p>
-
-  <!-- 3. Box Model -->
-  <div class="product-box">New arrival: Silk wrap dress with elegant trim.</div>
-
-  <!-- 4. Responsive Design -->
-  <p>Resize the browser to see the background change for mobile view.</p>
-
-  <!-- 5. Background Image -->
-  <div class="banner">Welcome to Our Style Studio</div>
-
-  <!-- 6. Transition Effect -->
-  <button class="shop-btn">Shop Now</button>
-
-  <!-- 7. Absolute vs Relative Positioning -->
-  <div class="relative-box">
-    Fashion Frame
-    <div class="absolute-box">Promo Tag</div>
-  </div>
-
-  <!-- 8. CSS Units -->
-  <div style="font-size: 20px;">
-    <p class="px-size">Font size in px (16px)</p>
-    <p class="em-size">Font size in em (1.5em)</p>
-    <p class="rem-size">Font size in rem (1.5rem)</p>
-  </div>
-
-  <!-- 9. Flex Layout -->
-  <div class="flex-container">
-    <div class="flex-item">Beauty Tips</div>
-    <div class="flex-item">Design Trends</div>
-  </div>
-
-  <!-- 10. Color Formats -->
-  <p class="rgb">This paragraph uses RGB color.</p>
-  <p class="hex">This paragraph uses HEX color.</p>
-  <p class="hsl">This paragraph uses HSL color.</p>
+  <h2>Table 2: Tech Startups in Kenya</h2>
+  <table>
+    <tr>
+      <th>Startup</th>
+      <th>Location</th>
+      <th>Founder</th>
+      <th>Focus Area</th>
+      <th>Contact</th>
+    </tr>
+    <tr>
+      <td>AgriTech Hub</td>
+      <td>Eldoret</td>
+      <td>Mercy W.</td>
+      <td>Smart Farming</td>
+      <td>0712345678</td>
+    </tr>
+    <tr>
+      <td>FinLink</td>
+      <td>Nairobi</td>
+      <td>John M.</td>
+      <td>Mobile Payments</td>
+      <td>0723456789</td>
+    </tr>
+    <tr>
+      <td>HealthSync</td>
+      <td>Kisumu</td>
+      <td>Grace T.</td>
+      <td>Telemedicine</td>
+      <td>0734567890</td>
+    </tr>
+    <tr>
+      <td>EduNova</td>
+      <td>Mombasa</td>
+      <td>Daniel K.</td>
+      <td>Online Learning</td>
+      <td>0745678901</td>
+    </tr>
+  </table>
 
 </body>
 </html>
