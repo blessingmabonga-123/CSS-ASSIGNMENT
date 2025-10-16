@@ -1,14 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 20px;
-    }
-
     table {
       width: 100%;
       border-collapse: collapse;
@@ -21,19 +14,69 @@
       text-align: center;
     }
 
-    /* Row color styles for Table 1 */
-    table:nth-of-type(1) tr:nth-child(1) { background-color: #d1c4e9; } /* Header */
-    table:nth-of-type(1) tr:nth-child(2) { background-color: #f8bbd0; } /* Brian */
-    table:nth-of-type(1) tr:nth-child(3) { background-color: #b2ebf2; } /* Faith */
-    table:nth-of-type(1) tr:nth-child(4) { background-color: #c8e6c9; } /* Kevin */
-    table:nth-of-type(1) tr:nth-child(5) { background-color: #fff9c4; } /* Linda */
+    /* Table 1 Header Cells */
+    table:nth-of-type(1) tr:nth-child(1) th:nth-child(1) { background-color: #ffcccc; }
+    table:nth-of-type(1) tr:nth-child(1) th:nth-child(2) { background-color: #ccffff; }
+    table:nth-of-type(1) tr:nth-child(1) th:nth-child(3) { background-color: #ccffcc; }
+    table:nth-of-type(1) tr:nth-child(1) th:nth-child(4) { background-color: #ffffcc; }
+    table:nth-of-type(1) tr:nth-child(1) th:nth-child(5) { background-color: #e6ccff; }
 
-    /* Row color styles for Table 2 */
-    table:nth-of-type(2) tr:nth-child(1) { background-color: #d1c4e9; } /* Header */
-    table:nth-of-type(2) tr:nth-child(2) { background-color: #ffe0b2; } /* AgriTech Hub */
-    table:nth-of-type(2) tr:nth-child(3) { background-color: #f0f4c3; } /* FinLink */
-    table:nth-of-type(2) tr:nth-child(4) { background-color: #b3e5fc; } /* HealthSync */
-    table:nth-of-type(2) tr:nth-child(5) { background-color: #f3e5f5; } /* EduNova */
+    /* Table 1 Data Cells */
+    table:nth-of-type(1) tr:nth-child(2) td:nth-child(1) { background-color: #ffe6e6; }
+    table:nth-of-type(1) tr:nth-child(2) td:nth-child(2) { background-color: #e0ffff; }
+    table:nth-of-type(1) tr:nth-child(2) td:nth-child(3) { background-color: #e0ffe0; }
+    table:nth-of-type(1) tr:nth-child(2) td:nth-child(4) { background-color: #ffffe0; }
+    table:nth-of-type(1) tr:nth-child(2) td:nth-child(5) { background-color: #f0e6ff; }
+
+    table:nth-of-type(1) tr:nth-child(3) td:nth-child(1) { background-color: #ffdddd; }
+    table:nth-of-type(1) tr:nth-child(3) td:nth-child(2) { background-color: #ddffff; }
+    table:nth-of-type(1) tr:nth-child(3) td:nth-child(3) { background-color: #ddffdd; }
+    table:nth-of-type(1) tr:nth-child(3) td:nth-child(4) { background-color: #ffffdd; }
+    table:nth-of-type(1) tr:nth-child(3) td:nth-child(5) { background-color: #e6ddff; }
+
+    table:nth-of-type(1) tr:nth-child(4) td:nth-child(1) { background-color: #ffd9d9; }
+    table:nth-of-type(1) tr:nth-child(4) td:nth-child(2) { background-color: #d9ffff; }
+    table:nth-of-type(1) tr:nth-child(4) td:nth-child(3) { background-color: #d9ffd9; }
+    table:nth-of-type(1) tr:nth-child(4) td:nth-child(4) { background-color: #ffffd9; }
+    table:nth-of-type(1) tr:nth-child(4) td:nth-child(5) { background-color: #e6d9ff; }
+
+    table:nth-of-type(1) tr:nth-child(5) td:nth-child(1) { background-color: #ffd6d6; }
+    table:nth-of-type(1) tr:nth-child(5) td:nth-child(2) { background-color: #d6ffff; }
+    table:nth-of-type(1) tr:nth-child(5) td:nth-child(3) { background-color: #d6ffd6; }
+    table:nth-of-type(1) tr:nth-child(5) td:nth-child(4) { background-color: #ffffd6; }
+    table:nth-of-type(1) tr:nth-child(5) td:nth-child(5) { background-color: #e6d6ff; }
+
+    /* Table 2 Header Cells */
+    table:nth-of-type(2) tr:nth-child(1) th:nth-child(1) { background-color: #ffb3b3; }
+    table:nth-of-type(2) tr:nth-child(1) th:nth-child(2) { background-color: #b3ffff; }
+    table:nth-of-type(2) tr:nth-child(1) th:nth-child(3) { background-color: #b3ffb3; }
+    table:nth-of-type(2) tr:nth-child(1) th:nth-child(4) { background-color: #ffffb3; }
+    table:nth-of-type(2) tr:nth-child(1) th:nth-child(5) { background-color: #d1b3ff; }
+
+    /* Table 2 Data Cells */
+    table:nth-of-type(2) tr:nth-child(2) td:nth-child(1) { background-color: #ffcccc; }
+    table:nth-of-type(2) tr:nth-child(2) td:nth-child(2) { background-color: #ccffff; }
+    table:nth-of-type(2) tr:nth-child(2) td:nth-child(3) { background-color: #ccffcc; }
+    table:nth-of-type(2) tr:nth-child(2) td:nth-child(4) { background-color: #ffffcc; }
+    table:nth-of-type(2) tr:nth-child(2) td:nth-child(5) { background-color: #e6ccff; }
+
+    table:nth-of-type(2) tr:nth-child(3) td:nth-child(1) { background-color: #ffe6e6; }
+    table:nth-of-type(2) tr:nth-child(3) td:nth-child(2) { background-color: #e0ffff; }
+    table:nth-of-type(2) tr:nth-child(3) td:nth-child(3) { background-color: #e0ffe0; }
+    table:nth-of-type(2) tr:nth-child(3) td:nth-child(4) { background-color: #ffffe0; }
+    table:nth-of-type(2) tr:nth-child(3) td:nth-child(5) { background-color: #f0e6ff; }
+
+    table:nth-of-type(2) tr:nth-child(4) td:nth-child(1) { background-color: #ffdddd; }
+    table:nth-of-type(2) tr:nth-child(4) td:nth-child(2) { background-color: #ddffff; }
+    table:nth-of-type(2) tr:nth-child(4) td:nth-child(3) { background-color: #ddffdd; }
+    table:nth-of-type(2) tr:nth-child(4) td:nth-child(4) { background-color: #ffffdd; }
+    table:nth-of-type(2) tr:nth-child(4) td:nth-child(5) { background-color: #e6ddff; }
+
+    table:nth-of-type(2) tr:nth-child(5) td:nth-child(1) { background-color: #ffd9d9; }
+    table:nth-of-type(2) tr:nth-child(5) td:nth-child(2) { background-color: #d9ffff; }
+    table:nth-of-type(2) tr:nth-child(5) td:nth-child(3) { background-color: #d9ffd9; }
+    table:nth-of-type(2) tr:nth-child(5) td:nth-child(4) { background-color: #ffffd9; }
+    table:nth-of-type(2) tr:nth-child(5) td:nth-child(5) { background-color: #e6d9ff; }
   </style>
 </head>
 <body>
@@ -87,6 +130,7 @@
       <th>Contact</th>
     </tr>
     <tr>
+         <tr>
       <td>AgriTech Hub</td>
       <td>Eldoret</td>
       <td>Mercy W.</td>
@@ -118,3 +162,4 @@
 
 </body>
 </html>
+        
