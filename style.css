@@ -1,58 +1,168 @@
-body {
-  font-family: Arial, sans-serif;
-  background-color: #fafafa;
-  margin: 40px;
-  color: #333;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fashion & Beauty – Showcase</title>
 
-h1 {
-  text-align: center;
-  color: #2b2b52;
-  font-size: 2.2em;
-}
+  <!-- Internal CSS -->
+  <style>
+    body {
+      font-family: 'Trebuchet MS', sans-serif;
+      background: linear-gradient(135deg, #fbeff5, #eaf6f6);
+      margin: 40px;
+      color: #2b2b2b;
+    }
 
-table {
-  width: 90%;
-  margin: 20px auto;
-  border-collapse: collapse;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
+    h1 {
+      text-align: center;
+      color: #b30059;
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    }
 
-th, td {
-  border: 1px solid #444;
-  padding: 12px;
-  text-align: center;
-  font-size: 1em;
-}
+    table {
+      width: 90%;
+      margin: 25px auto;
+      border-collapse: collapse;
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+    }
 
-th {
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+      font-size: 1em;
+    }
 
-/* Header color classes */
-.col1 { background-color: #2ecc71; }
-.col2 { background-color: #3498db; }
-.col3 { background-color: #9b59b6; }
-.col4 { background-color: #f39c12; }
-.col5 { background-color: #e74c3c; }
-.col6 { background-color: #1abc9c; }
+    th {
+      color: white;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
 
-caption {
-  text-align: left;
-  font-weight: bold;
-  font-size: 1.2em;
-  margin: 10px 0;
-  color: #2b2b52;
-}
+    /* Header color classes */
+    .col1 { background-color: #d63384; }
+    .col2 { background-color: #ff7f50; }
+    .col3 { background-color: #6f42c1; }
+    .col4 { background-color: #20c997; }
+    .col5 { background-color: #fd7e14; }
+    .col6 { background-color: #0d6efd; }
 
-footer {
-  text-align: center;
-  margin-top: 30px;
-  padding: 10px;
-  color: #555;
-  font-style: italic;
-  border-top: 2px solid #ccc;
-}
+    caption {
+      text-align: left;
+      font-weight: bold;
+      font-size: 1.2em;
+      margin: 10px 0;
+      color: #444;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fdf1f7;
+    }
+
+    tr:hover {
+      background-color: #ffe6f0;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 15px;
+      color: #777;
+      font-style: italic;
+      border-top: 2px dashed #b30059;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>👗 Fashion & Beauty Showcase</h1>
+
+  <!-- First Table -->
+  <table>
+    <caption>Trending Fashion Collections</caption>
+    <tr>
+      <th class="col1">Designer</th>
+      <th class="col2">Collection</th>
+      <th class="col3">Theme</th>
+      <th class="col4">Runway Date</th>
+      <th class="col5">Price Range</th>
+      <th class="col6">Status</th>
+    </tr>
+    <tr>
+      <td>Versace</td>
+      <td>Summer Glow</td>
+      <td>Tropical Elegance</td>
+      <td>Nov 2025</td>
+      <td>KES 20,000+</td>
+      <td>Available</td>
+    </tr>
+    <tr>
+      <td>Dior</td>
+      <td>Winter Luxe</td>
+      <td>Minimalist Chic</td>
+      <td>Dec 2025</td>
+      <td>KES 35,000+</td>
+      <td>Sold Out</td>
+    </tr>
+    <tr>
+      <td>Fenty</td>
+      <td>Glow & Bold</td>
+      <td>Street Glam</td>
+      <td>Jan 2026</td>
+      <td>KES 15,000+</td>
+      <td>Limited</td>
+    </tr>
+  </table>
+
+  <!-- Second Table -->
+  <table>
+    <caption>Beauty & Design Brands</caption>
+    <tr>
+      <th class="col1">Brand</th>
+      <th class="col2">Contact</th>
+      <th class="col3">Email</th>
+      <th class="col4">City</th>
+      <th class="col5">Specialty</th>
+      <th class="col6">Next Launch</th>
+    </tr>
+    <tr>
+      <td>MAC Cosmetics</td>
+      <td>+254 711 223344</td>
+      <td>info@mac.com</td>
+      <td>Nairobi</td>
+      <td>Luxury Makeup</td>
+      <td>Dec 2025</td>
+    </tr>
+    <tr>
+      <td>Huda Beauty</td>
+      <td>+254 722 334455</td>
+      <td>support@hudabeauty.com</td>
+      <td>Mombasa</td>
+      <td>Skincare & Beauty</td>
+      <td>Jan 2026</td>
+    </tr>
+    <tr>
+      <td>Gucci Design</td>
+      <td>+254 733 445566</td>
+      <td>design@gucci.com</td>
+      <td>Kisumu</td>
+      <td>Fashion Accessories</td>
+      <td>Feb 2026</td>
+    </tr>
+  </table>
+
+  <footer>
+    <p>&copy; 2025 Fashion & Beauty World | Designed with 💖 by Maisey</p>
+  </footer>
+
+</body>
+</html>
+
